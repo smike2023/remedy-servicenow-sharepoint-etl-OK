@@ -1,4 +1,4 @@
-offname: Upload ETL Project Kit
+name: Upload ETL Project Kit
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
 
       - name: Unzip uploaded project kit
         run: |
-          unzip 3-Zone_ETL_Project_Kit.zip -d extracted-files
+          unzip CLEAN_3-Zone_ETL_Project_Kit.zip -d extracted-files
 
       - name: Copy extracted files to root
         run: |
@@ -30,4 +30,3 @@ jobs:
           git add .
           git commit -m "Auto-imported ETL Project Kit contents" || echo "Nothing to commit"
           git push
-
