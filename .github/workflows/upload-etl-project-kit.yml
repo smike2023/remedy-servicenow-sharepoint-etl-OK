@@ -30,3 +30,35 @@ jobs:
           git add .
           git commit -m "Auto-imported ETL Project Kit contents" || echo "Nothing to commit"
           git push
+name: Upload ETL Project Kit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  unzip-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Unzip uploaded project kit
+        run: |
+          unzip CLEAN_3-Zone_ETL_Project_Kit.zip -d extracted-files
+
+      - name: Copy extracted files to root
+        run: |
+          cp extracted-files/* .
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Auto-imported ETL Project Kit contents" || echo "Nothing to commit"
+          git push
