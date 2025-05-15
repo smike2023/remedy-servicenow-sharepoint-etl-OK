@@ -1,21 +1,21 @@
 📁 Suggested Folder Structure
 
 remedy-servicenow-etl-project/
-├── README.md                        # Overview of the project and file descriptions
-├── .gitignore                       # Files and patterns Git should ignore
-├── 3-Zone_ETL_Project_Kit.zip      # Master archive of assets (optional)
+├── README.md
+├── .gitignore
+├── 3-Zone_ETL_Project_Kit.zip
 │
-├── assets/                         # Images, diagrams, flowcharts
+├── assets/
 │   ├── 3-zone-diagram.png
 │   └── ppt-slide-layout.png
 │
-├── pitch-deck/                     # Slide presentations and decks
+├── pitch-deck/
 │   └── 3-Zone_SharePoint_Reorg_PitchDeck.pptx
 │
-├── reference-docs/                # Governance guides, summaries
+├── reference-docs/
 │   └── 3-Zone_ETL_Governance_Model_Explainer_FIXED.pdf
 │
-├── tracker-board/                 # Tracker boards, Notion-ready formats
+├── tracker-board/
 │   └── 3-Zone_SharePoint_Notion_Tracker.csv
 │
 ├── .github/
