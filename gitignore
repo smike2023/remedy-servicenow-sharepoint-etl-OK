@@ -1,0 +1,23 @@
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Office temp files
+~$*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS trash and metadata
+.Spotlight-V100
+.Trashes
